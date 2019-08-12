@@ -1,2 +1,8 @@
-<h1>Games#score</h1>
-<p>Find me in app/views/games/score.html.erb</p>
+<h1>Games Score</h1>
+
+<p>You took : <%= @answer[:time] %> seconds</p>
+<p>Your score is : <%= @answer[:score] %> points</p>
+<p><strong><%= @answer[:message] %> !!!</strong></p>
+
+<%= link_to "Play Again", new_path %>
+

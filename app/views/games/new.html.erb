@@ -1,3 +1,4 @@
+<% @start_time = Time.now.to_i %>
 <h1>New Game</h1>
 
 <div class="all_letters">
@@ -12,5 +13,6 @@
   <p>What is the longest word you can find ?</p>
   <input type="text" name="word" class="simple_form search" placeholder="Type word here">
   <input type="hidden" name="grid" class="simple_form search" value = <%=@letters.join%>>
+  <input type="hidden" name="start" class="simple_form search" value = <%=@start_time%>>
   <input type="submit" value="PLAY!" class="btn btn-flat">
 </form>
